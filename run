@@ -1,0 +1,6 @@
+#!/bin/bash
+file="conways_gol.cpp"
+file_base="conways_gol_out"
+g++ ${file} -c ${file}
+g++ ${file} -o ${file_base} -lsfml-graphics -lsfml-window -lsfml-system
+./$file_base
